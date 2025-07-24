@@ -1,5 +1,5 @@
 # thermo-github
-thermo-github/
+bash
 ├── index.html
 ├── about.html
 ├── research.html
