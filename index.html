@@ -2,60 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thermo‑Fluids Group</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thermo‑Fluids Research Group</title>
   <style>
-    /* Inline minimal fallback styling for quick preview */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: #003366;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
       color: #fff;
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
     header h1 {
       margin: 0;
+      font-size: 2.5rem;
+      color: #ffd700;
     }
+
     nav {
-      margin-top: 10px;
+      margin-top: 15px;
     }
+
     nav a {
-      color: #fff;
-      margin-right: 15px;
+      margin: 0 10px;
       text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #ffd700;
     }
+
     .hero {
-      background: #e0e0e0;
-      padding: 60px 20px;
       text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(145deg, #f39c12, #d35400);
+      color: #fff;
     }
+
     .hero h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    main {
+      flex: 1;
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffffff10;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: #ffe;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    li {
       margin-bottom: 10px;
     }
-    main {
-      padding: 40px 20px;
-    }
-    section h3 {
-      margin-top: 0;
-    }
+
     footer {
-      background: #003366;
-      color: #fff;
+      background: rgba(0, 0, 0, 0.8);
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Thermo‑Fluids Research Group</h1>
     <nav>
@@ -68,18 +122,18 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Exploring Fluid Dynamics, Heat Transfer & Multiphase Flows</h2>
-      <p>Based at Technological University Dublin, led by Dr. Sajad Alimohammadi.</p>
-    </section>
+  <section class="hero">
+    <h2>Exploring Fluid Dynamics, Heat Transfer & Multiphase Flows</h2>
+    <p>At Technological University Dublin, led by Dr. Sajad Alimohammadi.</p>
+  </section>
 
+  <main>
     <section>
       <h3>Latest News</h3>
       <ul>
-        <li><strong>July 2025:</strong> New paper accepted in *IJHMT* on boiling heat transfer models.</li>
-        <li><strong>June 2025:</strong> PhD student Emma presented at the ASME Fluids Conference.</li>
-        <li><strong>May 2025:</strong> Welcome to new MSc students joining the group!</li>
+        <li><strong>July 2025:</strong> New paper accepted in <em>IJHMT</em> on boiling heat transfer.</li>
+        <li><strong>June 2025:</strong> Emma presented at ASME Fluids Engineering Division Conference.</li>
+        <li><strong>May 2025:</strong> Welcome to our new MSc students!</li>
       </ul>
     </section>
   </main>
@@ -87,5 +141,6 @@
   <footer>
     &copy; 2025 Thermo‑Fluids Research Group – Technological University Dublin
   </footer>
+
 </body>
 </html>
