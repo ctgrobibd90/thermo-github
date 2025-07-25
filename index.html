@@ -3,128 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thermo‑Fluids Research Group</title>
+  <title>Thermo‑Fluids Group</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 30px 20px;
+      background: #003366;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #ffd700;
     }
 
     nav {
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     nav a {
+      color: #fff;
       margin: 0 10px;
       text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      transition: color 0.3s;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #ffd700;
+      text-decoration: underline;
     }
 
+    /* Hero Image Section */
     .hero {
+      background: url('images/tudublin-building.jpg') no-repeat center center;
+      background-size: cover;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(145deg, #f39c12, #d35400);
-      color: #fff;
+      color: white;
     }
 
-    .hero h2 {
-      font-size: 2.2rem;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px 20px;
+      border-radius: 8px;
     }
 
     main {
-      flex: 1;
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #ffffff10;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    section {
-      margin-bottom: 60px;
-    }
-
-    h3 {
-      font-size: 1.8rem;
-      color: #ffe;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
-
-    li {
-      margin-bottom: 10px;
+    section h3 {
+      color: #003366;
     }
 
     footer {
-      background: rgba(0, 0, 0, 0.8);
+      background: #003366;
+      color: #fff;
       text-align: center;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #ccc;
+      margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      .hero h2 {
+    @media (max-width: 768px) {
+      .hero {
+        height: 300px;
+      }
+
+      .hero-overlay h2 {
         font-size: 1.5rem;
       }
 
+      .hero-overlay p {
+        font-size: 1rem;
+      }
+
       nav a {
-        display: block;
-        margin: 10px 0;
+        display: inline-block;
+        margin: 5px 8px;
       }
     }
   </style>
-</head>.hero {
-  background: url('images/tudublin-building.jpg') no-repeat center center;
-  background-size: cover;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px 20px;
-  border-radius: 8px;
-}
-
+</head>
 <body>
 
   <header>
@@ -140,22 +107,22 @@
   </header>
 
   <section class="hero">
-  <div class="hero-overlay">
-    <h2>Exploring Fluid Dynamics, Heat Transfer & Multiphase Flows</h2>
-    <p>Based at Technological University Dublin, led by Dr. Sajad Alimohammadi.</p>
-  </div>
-</section>
-
+    <div class="hero-overlay">
+      <h2>Exploring Fluid Dynamics, Heat Transfer & Multiphase Flows</h2>
+      <p>Based at Technological University Dublin, led by Dr. Sajad Alimohammadi</p>
+    </div>
+  </section>
 
   <main>
     <section>
-      <h3>Latest News</h3>
-      <ul>
-        <li><strong>July 2025:</strong> New paper accepted in <em>THERMINIC 2025</em> on Design and Implementation of an Autonomous Sensor-Controlled loop for Data Centre Server Cooling Application.</li>
-        <li><strong>June 2025:</strong> Eoin Oude Essink presented at IEEE ITherm Conference.</li>
-        <li><strong>May 2025:</strong> Welcome to our new Post-Doc!</li>
-      </ul>
-    </section>
+  <h3>Latest News</h3>
+  <ul>
+    <li><strong>July 2025:</strong> New paper accepted in <em>THERMINIC 2025</em> on Design and Implementation of an Autonomous Sensor-Controlled Loop for Data Centre Server Cooling Application.</li>
+    <li><strong>June 2025:</strong> Eoin Oude Essink presented at <em>IEEE ITherm Conference</em>.</li>
+    <li><strong>May 2025:</strong> Welcome to our new Post-Doc!</li>
+  </ul>
+</section>
+
   </main>
 
   <footer>
