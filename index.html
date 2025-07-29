@@ -60,7 +60,8 @@
       margin: auto;
     }
 
-    section h3 {
+    section h3,
+    section h2 {
       color: #003366;
     }
 
@@ -70,6 +71,25 @@
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+    }
+
+    /* Collaborators Logo Styling */
+    .collaborators .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .collaborators .logos img {
+      height: 80px;
+      object-fit: contain;
+      padding: 10px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
     }
 
     @media (max-width: 768px) {
@@ -88,6 +108,10 @@
       nav a {
         display: inline-block;
         margin: 5px 8px;
+      }
+
+      .collaborators .logos img {
+        height: 60px;
       }
     }
   </style>
@@ -115,28 +139,24 @@
 
   <main>
     <section>
-  <h3>Latest News</h3>
-  <ul>
-    <li><strong>July 2025:</strong> New paper accepted in <em>THERMINIC 2025</em> on Design and Implementation of an Autonomous Sensor-Controlled Loop for Data Centre Server Cooling Application.</li>
-    <li><strong>June 2025:</strong> PhD student Eoin Oude Essink presented at <em>IEEE ITherm Conference</em>.</li>
-    <li><strong>May 2025:</strong> Welcome to our new Post-Doc!</li>
-  </ul>
-</section>
-     <!-- Collaborators section -->
+      <h3>Latest News</h3>
+      <ul>
+        <li><strong>July 2025:</strong> New paper accepted in <em>THERMINIC 2025</em> on Design and Implementation of an Autonomous Sensor-Controlled Loop for Data Centre Server Cooling Application.</li>
+        <li><strong>June 2025:</strong> PhD student Eoin Oude Essink presented at <em>IEEE ITherm Conference</em>.</li>
+        <li><strong>May 2025:</strong> Welcome to our new Post-Doc!</li>
+      </ul>
+    </section>
+
+    <!-- Collaborators section -->
     <section class="collaborators">
-  <h2>Our Partners</h2>
-  <div class="logos">
-    <img src="images/images.jpg" alt="University College Cork Logo" />
-    <img src="images/WK_UCD-1024x683.jpg" alt="University of Galway Logo" />
-    <img src="images/trinity-logo.png" alt="Trinity College Dublin Logo" />
-    <img src="images/tud-logo.png" alt="Technological University Dublin Logo" />
-  </div>
-</section>
-
-  </main>
-</body>
-</html>
-
+      <h2>Our Partners</h2>
+      <div class="logos">
+        <img src="images/ucc-logo.jpg" alt="University College Cork Logo" />
+        <img src="images/ucg-logo.jpg" alt="University of Galway Logo" />
+        <img src="images/trinity-logo.png" alt="Trinity College Dublin Logo" />
+        <img src="images/tud-logo.png" alt="Technological University Dublin Logo" />
+      </div>
+    </section>
   </main>
 
   <footer>
