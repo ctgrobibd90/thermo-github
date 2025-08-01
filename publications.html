@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications</title>
   <style>
+    /* Your existing styles */
     body {
       font-family: system-ui, sans-serif;
       line-height: 1.6;
@@ -32,28 +33,73 @@
       margin-right: 1rem;
       text-decoration: none;
       color: #0366d6;
+      transition: color 0.2s ease;
     }
     .pub-links a:hover {
+      text-decoration: underline;
+      color: #024ea2;
+    }
+
+    /* Header styles */
+    .bg-dark {
+      background-color: #003366;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .py-3 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .mx-2 {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header class="bg-dark text-white py-3">
-  <div class="container text-center header-text">
-    <h1>Thermo‑Fluids Research Group</h1>
-    <nav class="mt-2">
-      <a href="index.html" class="text-white mx-2">Home</a>
-      <a href="about.html" class="text-white mx-2">About</a>
-      <a href="research.html" class="text-white mx-2">Research</a>
-      <a href="people.html" class="text-white mx-2">People</a>
-      <a href="publications.html" class="text-white mx-2">Publications</a>
-      <a href="contact.html" class="text-white mx-2">Contact</a>
-    </nav>
-  </div>
-</header>
+    <div class="container header-text">
+      <h1>Thermo‑Fluids Research Group</h1>
+      <nav class="mt-2">
+        <a href="index.html" class="mx-2">Home</a>
+        <a href="about.html" class="mx-2">About</a>
+        <a href="research.html" class="mx-2">Research</a>
+        <a href="people.html" class="mx-2">People</a>
+        <a href="publications.html" class="mx-2">Publications</a>
+        <a href="contact.html" class="mx-2">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <h1>Publications</h1>
+
+  <!-- ... rest of your publication entries ... -->
+
 
   
 
