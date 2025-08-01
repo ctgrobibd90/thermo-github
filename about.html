@@ -17,12 +17,14 @@
       font-family: 'Segoe UI', Arial, sans-serif;
     }
 
+    /* Top image */
     .top-image {
       width: 100%;
       height: auto;
       display: block;
     }
 
+    /* Fixed header */
     header {
       position: fixed;
       top: 0;
@@ -30,26 +32,40 @@
       width: 100%;
       background-color: #003366;
       color: #fff;
+      padding: 15px 20px;
       text-align: center;
-      padding: 15px 10px;
-      font-size: 1.5em;
-      font-weight: bold;
       z-index: 1000;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Spacer to push content below fixed header */
     .spacer {
-      height: 80px; /* height of the fixed header */
+      height: 120px; /* match header height */
     }
 
     main {
       max-width: 800px;
-      width: 100%;
-      padding: 40px 20px;
       margin: 0 auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
+      padding: 40px 20px;
       background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
@@ -87,15 +103,23 @@
 </head>
 <body>
 
-  <!-- Image appears at the top of the page -->
+  <!-- Top image first -->
   <img src="images/Wind-Turbine-Tallaght-Campus.jpg" alt="Thermo-Fluids Group Lab" class="top-image" />
 
-  <!-- Fixed header appears below the image and stays on scroll -->
+  <!-- Fixed header below image -->
   <header>
-    Thermo‑Fluids Research Group
+    <h1>Thermo‑Fluids Research Group</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Spacer pushes main content below the fixed header -->
+  <!-- Spacer for fixed header -->
   <div class="spacer"></div>
 
   <main>
@@ -116,5 +140,6 @@
       </ul>
     </section>
   </main>
+
 </body>
 </html>
