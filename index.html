@@ -17,6 +17,23 @@
       background: #003366;
       color: #fff;
       padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-logo {
+      height: 60px;
+      max-width: 100px;
+      object-fit: contain;
+    }
+
+    .header-text {
+      flex-grow: 1;
       text-align: center;
     }
 
@@ -35,7 +52,6 @@
       text-decoration: underline;
     }
 
-    /* Hero Image Section */
     .hero {
       background: url('images/Historical Buildings Clock Tower.jpg') no-repeat center center;
       background-size: cover;
@@ -73,7 +89,6 @@
       margin-top: 40px;
     }
 
-    /* Collaborators Logo Styling */
     .collaborators .logos {
       display: flex;
       justify-content: center;
@@ -113,21 +128,42 @@
       .collaborators .logos img {
         height: 60px;
       }
+
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-logo {
+        margin: 10px 0;
+      }
+
+      .header-text {
+        order: -1;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Thermo‑Fluids Research Group</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-content">
+      <img src="images/TUD.png" alt="Left Logo" class="header-logo left-logo" loading="lazy" />
+      
+      <div class="header-text">
+        <h1>Thermo‑Fluids Research Group</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="people.html">People</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <img src="images/SEAI.png" alt="Right Logo" class="header-logo right-logo" loading="lazy" />
+    </div>
   </header>
 
   <section class="hero">
@@ -147,14 +183,13 @@
       </ul>
     </section>
 
-    <!-- Collaborators section -->
     <section class="collaborators">
       <h2>Our Partners</h2>
       <div class="logos">
-        <img src="images/images.jpg" alt="University College Cork Logo" />
-        <img src="images/ERBE-Full-Log.png" alt="University of Galway Logo" />
-        <img src="images/MaREI_300.png" alt="Trinity College Dublin Logo" />
-        <img src="images/SEAI.png" alt="Technological University Dublin Logo" />
+        <img src="images/images.jpg" alt="University College Cork Logo" loading="lazy" />
+        <img src="images/ERBE-Full-Log.png" alt="University of Galway Logo" loading="lazy" />
+        <img src="images/MaREI_300.png" alt="Trinity College Dublin Logo" loading="lazy" />
+        <img src="images/SEAI.png" alt="Technological University Dublin Logo" loading="lazy" />
       </div>
     </section>
   </main>
