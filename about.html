@@ -5,26 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thermo-Fluids Group</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
       background-color: #ffffff;
       color: #222;
       font-family: 'Segoe UI', Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #003366;
+      color: #fff;
       text-align: center;
+      padding: 15px 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     main {
       max-width: 800px;
       width: 100%;
-      padding: 40px 20px;
+      padding: 100px 20px 40px; /* top padding for header */
+      margin: 0 auto;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       background-color: #f9f9f9;
+      text-align: center;
     }
 
     .header-image {
@@ -67,8 +83,12 @@
   </style>
 </head>
 <body>
+
+  <header>
+    Thermo‑Fluids Research Group
+  </header>
+
   <main>
-    <!-- Add your image here -->
     <img src="images/Wind-Turbine-Tallaght-Campus.jpg" alt="Thermo-Fluids Group Lab" class="header-image" />
 
     <section>
