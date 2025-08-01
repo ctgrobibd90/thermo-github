@@ -6,6 +6,11 @@
   <title>People | Research Group</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
     .person-card {
       text-align: center;
       padding: 15px;
@@ -32,18 +37,18 @@
 </head>
 <body>
   <header class="bg-dark text-white py-3">
-  <div class="container text-center header-text">
-    <h1>Thermo‑Fluids Research Group</h1>
-    <nav class="mt-2">
-      <a href="index.html" class="text-white mx-2">Home</a>
-      <a href="about.html" class="text-white mx-2">About</a>
-      <a href="research.html" class="text-white mx-2">Research</a>
-      <a href="people.html" class="text-white mx-2">People</a>
-      <a href="publications.html" class="text-white mx-2">Publications</a>
-      <a href="contact.html" class="text-white mx-2">Contact</a>
-    </nav>
-  </div>
-</header>
+    <div class="container text-center header-text">
+      <h1>Thermo‑Fluids Research Group</h1>
+      <nav class="mt-2">
+        <a href="index.html" class="text-white mx-2">Home</a>
+        <a href="about.html" class="text-white mx-2">About</a>
+        <a href="research.html" class="text-white mx-2">Research</a>
+        <a href="people.html" class="text-white mx-2">People</a>
+        <a href="publications.html" class="text-white mx-2">Publications</a>
+        <a href="contact.html" class="text-white mx-2">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <div class="container py-5">
     <h1 class="mb-4 text-center">Our Team</h1>
@@ -52,13 +57,13 @@
       <!-- Example Person -->
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="person-card">
-          <img src="images/Sajad.jpg" alt="Sajad Alimohammadi">
+          <img src="images/Sajad.jpg" alt="Photo of Dr Sajad Alimohammadi">
           <h5>Dr Sajad Alimohammadi</h5>
           <p>Principal Investigator</p>
           <div class="links">
             <a href="mailto:sajad.alimohammadi@tudublin.ie">Email</a>
-            <a href="https://scholar.google.com/citations?user=qVAzBjwAAAAJ&hl=en" target="_blank">Scholar</a>
-            <a href="https://researchprofiles.tudublin.ie/en/persons/sajad-alimohammadi-2" target="_blank">Website</a>
+            <a href="https://scholar.google.com/citations?user=qVAzBjwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+            <a href="https://researchprofiles.tudublin.ie/en/persons/sajad-alimohammadi-2" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
       </div>
@@ -66,12 +71,12 @@
       <!-- Another Person -->
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="person-card">
-          <img src="images/1.jpg" alt="Md Robiul Hossain">
+          <img src="images/1.jpg" alt="Photo of Dr Robiul Hossain">
           <h5>Dr Robiul Hossain</h5>
           <p> Senior Research Assistant</p>
           <div class="links">
             <a href="mailto:bob@example.com">Email</a>
-            <a href="https://scholar.google.com" target="_blank">Scholar</a>
+            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
           </div>
         </div>
       </div>
@@ -82,4 +87,3 @@
   </div>
 </body>
 </html>
-
