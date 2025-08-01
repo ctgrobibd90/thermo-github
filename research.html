@@ -8,8 +8,8 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: white; /* White background */
-      color: #222; /* Darker text for readability */
+      background-color: white;
+      color: #222;
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
@@ -22,13 +22,20 @@
       max-width: 900px;
       padding: 40px 20px;
     }
- header {
+
+    header {
       background: #003366;
       color: #fff;
       padding: 20px;
       text-align: center;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
-     nav {
+
+    nav {
       margin-top: 10px;
     }
 
@@ -38,13 +45,15 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     h2 {
       font-size: 2em;
+      margin-top: 120px; /* push content down under fixed header */
       margin-bottom: 30px;
     }
 
     article {
-      background-color: #f5f5f5; /* Light gray background for contrast */
+      background-color: #f5f5f5;
       padding: 20px;
       border-radius: 8px;
       margin-bottom: 20px;
@@ -90,6 +99,8 @@
       }
     }
   </style>
+</head>
+<body>
   <header>
     <h1>Thermo‑Fluids Research Group</h1>
     <nav>
@@ -101,8 +112,7 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-</head>
-<body>
+
   <main>
     <h2>Research Projects</h2>
 
@@ -121,17 +131,14 @@
       <p>Focus on turbulent boundary layers, aero-acoustics, and more...</p>
     </article>
 
-    <!-- Collaborators section -->
     <section class="collaborators">
       <h2>Collaborating Organizations</h2>
       <div class="logos">
         <img src="images/TUD.png" alt="Technological University Dublin Logo" />
         <img src="images/TrinityCD.png" alt="Trinity College Dublin Logo" />
-         <img src="images/WK_UCD-1024x683.jpg" alt="UCD Logo" />
+        <img src="images/WK_UCD-1024x683.jpg" alt="University College Dublin Logo" />
         <img src="images/university-college-cork-ucc-logo-vector.png" alt="University College Cork Logo" />
         <img src="images/University_of_Galway_logo_2022.png" alt="University of Galway Logo" />
-    
-    
       </div>
     </section>
   </main>
