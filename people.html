@@ -6,7 +6,6 @@
   <title>People | Research Group</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
-    /* Person card styles */
     .person-card {
       text-align: center;
       padding: 15px;
@@ -26,6 +25,13 @@
     .person-card h5 {
       margin-bottom: 5px;
     }
+    .person-card h5 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .person-card h5 a:hover {
+      text-decoration: underline;
+    }
     .person-card .links a {
       margin: 0 5px;
       color: #007bff;
@@ -36,19 +42,17 @@
       text-decoration: underline;
       color: #0056b3;
     }
-
-    /* Custom navy blue header */
     .custom-header {
-      background-color: #001f4d; /* Navy blue */
-      box-shadow: 0 2px 8px rgba(0, 31, 77, 0.7); /* subtle shadow */
+      background-color: #001f4d;
+      box-shadow: 0 2px 8px rgba(0, 31, 77, 0.7);
     }
     .custom-header a {
-      color: #cce0ff; /* lighter blue links */
+      color: #cce0ff;
       transition: color 0.3s ease;
       text-decoration: none;
     }
     .custom-header a:hover {
-      color: #ffffff; /* white on hover */
+      color: #ffffff;
       text-decoration: underline;
     }
   </style>
@@ -72,16 +76,16 @@
     <h1 class="mb-4 text-center">Our Team</h1>
     <div class="row">
 
-      <!-- Example Person -->
+      <!-- Person Example -->
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="person-card">
           <img src="images/Sajad.jpg" alt="Photo of Dr Sajad Alimohammadi">
-          <h5>Dr Sajad Alimohammadi</h5>
+          <h5><a href="sajad.html">Dr Sajad Alimohammadi</a></h5>
           <p>Principal Investigator</p>
           <div class="links">
             <a href="mailto:sajad.alimohammadi@tudublin.ie">Email</a>
-            <a href="https://scholar.google.com/citations?user=qVAzBjwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
-            <a href="https://researchprofiles.tudublin.ie/en/persons/sajad-alimohammadi-2" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://scholar.google.com/citations?user=qVAzBjwAAAAJ&hl=en" target="_blank">Scholar</a>
+            <a href="https://researchprofiles.tudublin.ie/en/persons/sajad-alimohammadi-2" target="_blank">Website</a>
           </div>
         </div>
       </div>
@@ -90,77 +94,16 @@
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="person-card">
           <img src="images/1.jpg" alt="Photo of Dr Robiul Hossain">
-          <h5>Dr Robiul Hossain</h5>
+          <h5><a href="robiul.html">Dr Robiul Hossain</a></h5>
           <p>Senior Research Assistant</p>
           <div class="links">
             <a href="mailto:bob@example.com">Email</a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
-          </div>
-        </div>
-      </div>
-      <!-- Another Person -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="person-card">
-          <img src="images/EOE.jpg" alt="Photo of Eoin Oude Essink">
-          <h5>Eoin Oude Essink</h5>
-          <p>Fulbright Scholar and Doctoral Researcher</p>
-          <div class="links">
-            <a href="mailto:eoin.oudeessink@tudublin.ie">Email</a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
-          </div>
-        </div>
-      </div>
-       <!-- Another Person -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="person-card">
-          <img src="images/DAVID.png" alt="Photo of David Salter">
-          <h5>David Salter</h5>
-          <p>PhD Researcher/ HPAL</p>
-          <div class="links">
-            <a href="mailto:david.salter@tudublin.ie">Email</a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
-          </div>
-        </div>
-      </div>
-      <!-- Another Person -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="person-card">
-          <img src="images/DELARA.png" alt="Photo of Delara Soltani">
-          <h5>Delara Soltani</h5>
-          <p>PhD Researcher</p>
-          <div class="links">
-            <a href="mailto:d21128089@mytudublin.ie">Email</a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
-          </div>
-        </div>
-      </div>
-      <!-- Another Person -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="person-card">
-          <img src="images/ARAB.jpeg" alt="Photo of Mohamed AbdulAziz Arab">
-          <h5>Mohamed AbdulAziz Arab</h5>
-          <p>PhD Researcher</p>
-          <div class="links">
-            <a href="mailto:d22127690@mytudublin.ie">Email</a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
-          </div>
-        </div>
-      </div>
-      <!-- Another Person -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="person-card">
-          <img src="images/SID.jpg" alt="Photo of Sidharth P. Raut">
-          <h5>Sidharth P. Raut</h5>
-          <p>PhD Researcher</p>
-          <div class="links">
-            <a href="mailto:d20125511@mytudublin.ie">Email</a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
+            <a href="https://scholar.google.com" target="_blank">Scholar</a>
           </div>
         </div>
       </div>
 
-      <!-- Add more people by copying blocks above -->
-
+      <!-- Add more people with the same pattern -->
     </div>
   </div>
 </body>
